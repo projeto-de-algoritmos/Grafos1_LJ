@@ -20,8 +20,8 @@ Temas:
 ## Alunos
 |Matrícula | Aluno |
 | -- | -- |
-| xx/xxxxxx  |  xxxx xxxx xxxxx |
-| xx/xxxxxx  |  xxxx xxxx xxxxx |
+| 17/0013651  |  João Gabriel Antunes |
+| 16/0132550  |  Lorrany Azevedo |
 
 ## Sobre 
 Descreva os objetivos do seu projeto e como ele funciona. 
