@@ -11,6 +11,20 @@ int m, n;
 
 map<char, int> mp;
 
+
+bool dfs(int x, int y, int dir) {
+    //verifica se um báu foi encontrado
+    if(grid[x][y] == '*') {
+        return true;
+    }
+    //verifica se a posição atual já foi visitada ou se ela saiu do caminho
+    if(grid[x][y] == 'X' or !grid[x][y]) {
+        return false;
+    }
+    
+    return dfs(u, v, dir);
+}
+
 int main() {
     
     mp['^'] = 0;
