@@ -1,6 +1,6 @@
-# Mapa do Meitre
+# Mapa do Meistre
 
-**Número da Lista**: X<br>
+**Número da Lista**: x<br>
 **Conteúdo da Disciplina**: Grafos 1<br>
 
 ## Alunos
@@ -17,11 +17,15 @@ Adicione 3 ou mais screenshots do projeto em funcionamento.
 
 ## Instalação 
 **Linguagem**: C++<br>
-**Framework**: (caso exista)<br>
-Descreva os pré-requisitos para rodar o seu projeto e os comandos necessários.
+Para rodar o projeto basta ter o compilador g++ instalado em sua máquina.
 
 ## Uso 
-Explique como usar seu projeto caso haja algum passo a passo após o comando de execução.
+Para rodar o projeto basta executar os seguintes comando no terminal:
+
+```console
+g++ -o prog 1855.cpp
+./prog < input
+```
 
 ## Outros 
 Quaisquer outras informações sobre seu projeto podem ser descritas abaixo.
