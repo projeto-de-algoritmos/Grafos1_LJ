@@ -9,7 +9,15 @@ const int N = 123;
 char grid[N][N];
 int m, n;
 
+map<char, int> mp;
+
 int main() {
+    
+    mp['^'] = 0;
+    mp['>'] = 1;
+    mp['v'] = 2;
+    mp['<'] = 3;
+    
     memset(grid, 0, sizeof grid);
     scanf("%d %d", &n, &m);
     for(int i = 1; i <= m; ++i) {
