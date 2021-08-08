@@ -13,7 +13,8 @@
 Neste projeto nós resolvemos o exercício 1855 do uri. 
 
 ## Screenshots
-Adicione 3 ou mais screenshots do projeto em funcionamento.
+![alt text](./prog.jpg)
+![alt text](./uri.jpg)
 
 ## Instalação 
 **Linguagem**: C++<br>
@@ -28,8 +29,4 @@ g++ -o prog 1855.cpp
 ```
 
 ## Outros 
-Quaisquer outras informações sobre seu projeto podem ser descritas abaixo.
-
-
-
-
+Na questão 1855 não foi seguido a forma convencional de se implementar um gráfo (com lista ou matriz adjacentes), ou seja é o que chamamos de grafo implicito, os vértices são representados pela posição atual a aresta é representada pelo ato de calcular qual a posição seguinte do meu mapa.
