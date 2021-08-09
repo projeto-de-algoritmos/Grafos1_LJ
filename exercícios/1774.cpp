@@ -50,7 +50,7 @@ struct DisjointSet {
         x = find(x);
         y = find(y);
 
-        if(rank[x] < rank[y]) {
+        if(rank[x] > rank[y]) {
             parent[y] = x;
         }
         else {
