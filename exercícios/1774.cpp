@@ -23,6 +23,7 @@ struct Graph {
     }
 };
 
+// estrutura de um set disjoin 
 struct DisjointSet {
     int *rank, *parent;
     int n;
@@ -49,7 +50,7 @@ struct DisjointSet {
         x = find(x);
         y = find(y);
 
-        if(rank[x] > rank[y]) {
+        if(rank[x] < rank[y]) {
             parent[y] = x;
         }
         else {
@@ -61,6 +62,7 @@ struct DisjointSet {
     }
 };
 
+// funcao q implementa o algoritmo de kruskal, uma abordagem 'greedy' pra encontrar nos em uma arvore de abrangencia minima
 int Graph::kruskal() {
     int weight = 0;
     sort(edges.begin(), edges.end());
@@ -81,7 +83,16 @@ int Graph::kruskal() {
     return weight;
 }
 
+// driver para funcionamento do codigo
 int main() {
-
+    int v, e;
+    cin >> v >> e;
+    Graph g(v, 2 * e);
+    for(int i = 0; i < e; i++){
+        int u, v, w;
+        cin >> u >> v >> w;
+        g.addEdge(u, v, w);
+    }
+    cout << g.kruskal() << '\n';
     return 0;
 }
